@@ -1,0 +1,8 @@
+<!-- Liste des élèves -->
+<h2>Liste des élèves</h2>
+<ul class="eleves">
+    <li *ngFor="let eleve of eleves" (click)="onSelect(eleve)">
+        <span class="badge">{{eleve.id}}</span> {{eleve.firstName}} {{ eleve.lastName | uppercase }}
+    </li>
+</ul>
+<app-eleve-detail [eleve]="selectedEleve"></app-eleve-detail>

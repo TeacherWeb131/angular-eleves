@@ -1,0 +1,12 @@
+<!-- 1 élève -->
+<div *ngIf="eleve">
+    <h2>Infos de l'élève : {{eleve.lastName | uppercase}}</h2>
+    <div>
+        <span>id: </span>{{eleve.id}}
+    </div>
+    <div>
+        <label>Lastname:
+            <input [(ngModel)]="eleve.lastName" placeholder="lastname" />
+        </label>
+    </div>
+</div>
